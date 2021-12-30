@@ -138,9 +138,9 @@
   });
 
   /**
-   * Skills animation
+   * Plans animation
    */
-  let skilsContent = select('.skills-content');
+  let skilsContent = select('.plans-content');
   if (skilsContent) {
     new Waypoint({
       element: skilsContent,
@@ -157,6 +157,7 @@
   /**
    * Testimonials slider
    */
+/*
   new Swiper('.testimonials-slider', {
     speed: 600,
     loop: true,
@@ -182,7 +183,7 @@
       }
     }
   });
-
+*/
   /**
    * Porfolio isotope and filter
    */
