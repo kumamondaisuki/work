@@ -500,6 +500,7 @@ section.section-show {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
+/*
 .testimonials .testimonials-carousel, .testimonials .testimonials-slider {
   overflow: hidden;
 }
@@ -538,7 +539,7 @@ section.section-show {
   color: #999;
   margin: 0 0 0 25px;
 }
-/*
+
 .testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
   color: rgba(255, 255, 255, 0.25);
   font-size: 26px;
@@ -555,7 +556,7 @@ section.section-show {
   top: 10px;
 }
 
-*/
+
 .testimonials .testimonial-item p {
   font-style: italic;
   margin: 0 15px 0 15px;
@@ -579,6 +580,7 @@ section.section-show {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #18d26e;
 }
+*/
 
 /*--------------------------------------------------------------
 # Experience
@@ -597,7 +599,7 @@ section.section-show {
     position: relative;
 }
     .experience .experience-item h4 {
-        line-height: 18px;
+        line-height: 20px;
         font-size: 18px;
         font-weight: 600;
         text-transform: uppercase;
@@ -606,19 +608,38 @@ section.section-show {
         margin-bottom: 10px;
     }
     .experience .experience-item h5 {
-        font-size: 16px;
-        background: rgba(255, 255, 255, 0.15);
+        font-size: 18px;
         padding: 5px 15px;
-        display: inline-block;
         font-weight: 600;
         margin-bottom: 10px;
     }
+    .experience .experience-item h6 {
+      font-size: 16px;
+      color: #ffa500;
+      padding: 5px;
+      display: inline-block;
+      font-weight: 600;
+    }
+    .experience .experience-item box {
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      background: rgba(255, 255, 255, 0.1);
+      transition: ease-in-out 0.3s;
+      margin-bottom: 20px;
+    }
+
+    .experience .experience-item body1 {
+      font-size: 16px;
+      padding: 5px;
+    }
+
     .experience .experience-item ul {
         padding-left: 20px;
     }
-        .experience .experience-item ul li {
-            padding-bottom: 10px;
-        }
+    .experience .experience-item ul li {
+        padding-bottom: 10px;
+    }
     .experience .experience-item:last-child {
         padding-bottom: 0;
     }
