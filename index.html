@@ -28,9 +28,11 @@
     <link href="assets/css/style.css" rel="stylesheet">
 
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+
+    
 </head>
 
-<body>
+<body id="app">
 
     <!-- ======= Header ======= -->
     <header id="header">
@@ -38,16 +40,25 @@
 
             <h1><a href="index.html">Fiona Hsiao</a></h1>
             <h2>Stay Hungry, Stay Foolish</h2>
+            
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link active" href="#header">HOME</a></li>
-                    <li><a class="nav-link" href="#about">ABOUT</a></li>
-                    <li><a class="nav-link" href="#experience">EXPERIENCE</a></li>
-                    <li><a class="nav-link" href="#skills">SKILLS</a></li>
+                    <li><a class="nav-link active" href="#header">{{ $t('header.home')}}</a></li>
+                    <li><a class="nav-link" href="#about">{{ $t('header.about')}}</a></li>
+                    <li><a class="nav-link" href="#experience">{{ $t('header.experience')}}</a></li>
+                    <li><a class="nav-link" href="#skills">{{ $t('header.skills')}}</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
+                
+                <div class="social-links">
+                    <p id="enLang">En</p>
+                    <p id="jaLang">Ja</p>
+                    <p id="twLang">Tw</p>
+                </div>
             </nav>
+
+            
 
 
         </div>
@@ -142,10 +153,12 @@
                         </p>
                         <box>
                             <body1>
-                                剛進公司時，剛好三聯式發票要沒落，因公司的開發團隊主要在日本，
+                                剛進公司時剛好是政府宣導要切換成電子發票的時期，因公司的開發團隊主要在日本，
                                 所以由唯一台灣人的我做電子發票的調查、與user開會了解需求、
                                 與日本前輩們討論種種流程的規劃。經歷了一連串的調查、開會、開發、
-                                測試、送審，最終成功導入了電子發票。
+                                測試、送審，將電子發票導入至公司的ERP系統中。
+                                公司ERP系統是使用Java、Spring框架、Hibernate與資料庫做聯繫。
+                                介面則是使用Action Script做開發。
                             </body1>
                         </box>
                         <h6>Android app開發</h6>
@@ -159,9 +172,10 @@
                         </p>
                         <box>
                             <body1>
-                                透過公司api在app上顯示相關資訊讓使用者方便查詢所需要的資訊。
-                                因為是第一次的app開發，一切的開發技術都來自網路上的分享。
-                                現在也持續在做android app的學習與開發。
+                                利用公司api在app上顯示相關資訊讓使用者方便查詢所需要的資訊。
+                                使用Java開發，畫面是利用xml排版。透過firebase管理發布測試版，
+                                Google play上架app供使用者下載。開發上使用的技術都來自網路上。
+                                現在也在自學Kotlin語言、Clean Architecture架構、jetpack compose畫面顯示。
                             </body1>
                         </box>
                         <h6>Node.js 網站維護</h6>
@@ -174,8 +188,8 @@
                         </p>
                         <box>
                             <body1>
-                                前端使用angularJS框架，後端則是使用Express。一開始要先了解npm、bower的用途
-                                與熟悉各目錄資料夾。因為還需要發布成ios app形式，所以也要了解ios app發布方式。
+                                前端使用angularJS框架，後端則是使用Express。一開始先了解npm、bower的用途
+                                與熟悉各目錄資料夾。因為還需要發布成ios app形式，所以也需了解ios app發布方式。
                                 花了一些功夫才理解apple developer上各個設定的意義。
                             </body1>
                         </box>
@@ -392,7 +406,6 @@
                 <h2>Portfolio ＆ Links</h2>
                 <p>作品</p>
             </div>
-
         </div>
 
     </section>
@@ -407,6 +420,12 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://unpkg.com/vue-i18n@9"></script>
+    <script src="https://unpkg.com/vue-i18n@9.1.0/dist/vue-i18n.global.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/vuei18n.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>

@@ -52,6 +52,29 @@
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
   })
+  /**
+   * 多語系
+   */
+  on('click','#enLang',function(e){
+    locale = 'en';
+    i18n.locale = locale;
+    localStorage.setItem('locale', locale);
+    location.reload();
+  })
+
+  on('click','#jaLang',function(e){
+    locale = 'ja';
+    i18n.locale = locale;
+    localStorage.setItem('locale', locale);
+    location.reload();
+  })
+
+  on('click','#twLang',function(e){
+    locale = 'tw';
+    i18n.locale = locale;
+    localStorage.setItem('locale', locale);
+    location.reload();
+  })
 
   /**
    * Scrool with ofset on links with a class name .scrollto
@@ -244,5 +267,6 @@
       clickable: true
     }
   });
+  
 
 })()
