@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 20px;
   display: flex;
 }
-.navbar .social-links p {
+.navbar .social-links a {
   font-size: 14px;
   display: flex;
   justify-content: center;
@@ -99,8 +99,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 30px;
   height: 30px;
 }
-    .navbar .social-links p:hover {
-        background: #ffa500;
+    .navbar .social-links a:hover {
+        background: rgba(255,165,0,0.2);
     }
 @media (max-width: 992px) {
   #header h1 {
@@ -285,7 +285,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 20px;
   display: flex;
 }
-.navbar-mobile .social-links p {
+.navbar-mobile .social-links a {
   font-size: 14px;
   display: flex;
   justify-content: center;

@@ -45,16 +45,16 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link active" href="#header">{{ $t('header.home')}}</a></li>
-                    <li><a class="nav-link" href="#about">{{ $t('header.about')}}</a></li>
-                    <li><a class="nav-link" href="#experience">{{ $t('header.experience')}}</a></li>
-                    <li><a class="nav-link" href="#skills">{{ $t('header.skills')}}</a></li>
+                    <li><a class="nav-link" href="#about">{{$t('header.about')}}</a></li>
+                    <li><a class="nav-link" href="#experience">{{$t('header.experience')}}</a></li>
+                    <li><a class="nav-link" href="#skills">{{$t('header.skills')}}</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
                 
                 <div class="social-links">
-                    <p id="enLang">En</p>
-                    <p id="jaLang">Ja</p>
-                    <p id="twLang">Tw</p>
+                    <a id="enLang" href="#">En</a>
+                    <a id="jaLang" href="#">Ja</a>
+                    <a id="twLang" href="#">Tw</a>
                 </div>
             </nav>
 
@@ -73,7 +73,7 @@
 
             <div class="section-title">
                 <h2>About</h2>
-                <p>關於我</p>
+                <p>{{$t('about.about')}}</p>
             </div>
 
             <div class="row">
@@ -81,14 +81,14 @@
                     <img src="assets/img/me.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-                    <h3>蕭欽方</h3>
+                    <h3>{{$t('about.myName')}}</h3>
                     <p class="fst-italic">
                         Sometimes we try to meet people's expectations and get lost in our lives. Remember to listen to your heart and pinpoint what you are truly eager for.
                     </p>
                     <ul>
-                        <li><i class="bi bi-chevron-right"></i> <strong>居住</strong> <span>桃園</span></li>
-                        <li><i class="bi bi-chevron-right"></i> <strong>學歷</strong> <span>淡江大學 - 資訊管理學系</span></li>
-                        <li><i class="bi bi-chevron-right"></i> <strong>信箱</strong> <span>ayay8221@gmail.com</span></li>
+                        <li><i class="bi bi-chevron-right"></i> <strong>{{$t('about.lived')}}</strong> <span>{{$t('about.liveIn')}}</span></li>
+                        <li><i class="bi bi-chevron-right"></i> <strong>{{$t('about.education')}}</strong> <span>{{$t('about.university')}}</span></li>
+                        <li><i class="bi bi-chevron-right"></i> <strong>{{$t('about.email')}}</strong> <span>ayay8221@gmail.com</span></li>
                     </ul>
 
                     <div class="social-links">
@@ -97,27 +97,11 @@
                         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
                     </div>
 
-                    <h3>簡歷</h3>
-                    <p>
-                        曾在三間公司任職軟體工程師，大約7年的經驗。
-                        前兩間公司主要是使用C#做開發，負責開發維護公司的ERP系統。
-                        而目前的公司主要是使用Java做開發，也是開發維護公司的ERP系統。
-                        2021年，因公司需求，所以開始接觸Android app開發。
-                        從開發環境的熟悉、app程式架構、kotlin語言、app的上架都是全新的學習。
-                        很喜歡這些新知識所帶來的挑戰，也會利用工作外的時間去學習與接收新知識。
-                        另外，目前也有在做Python課程進修。
-                    </p>
+                    <h3>{{$t('about.summary')}}</h3>
+                    <p>{{$t('about.mySummary')}}</p>
 
-                    <h3>興趣</h3>
-                    <p>
-                        對於登山感到有興趣。在登山的過程中可以讓自己的心理沉靜下來，
-                        只需要想著努力跨出每一步。看看四周的環境變化，眺望遠方雄偉的山景。
-                        雖然身體疲憊但卻能放鬆心靈。目前爬過的山有玉山、北大武、加羅湖與嘉明湖，
-                        日本富士山與紐西蘭的Roy peak等。<br>
-                        目前也在自學西班牙文。因網路調查下，西班牙文發音比較簡單(除了卷舌R)，又是世界三大語言，
-                        且中南美洲以西文為主，所以決定學習。西文中有詞語陰陽性之分、各人稱下動詞變化等一些障礙
-                        需要慢慢理解與消化。目前是以沒有壓力下，慢慢學習西文。
-                    </p>
+                    <h3>{{$t('about.interests')}}</h3>
+                    <p>{{$t('about.myInterests')}}</p>
                     
                 </div>
             </div>
@@ -134,105 +118,77 @@
 
             <div class="section-title">
                 <h2>Experience</h2>
-                <p>工作經驗</p>
+                <p>{{$t('experience.experience')}}</p>
             </div>
 
             <div class="row">
                 <div class="col-lg-6">
                     <div class="experience-item">
-                        <h4>2017/01 ~ 2019/05</h4>
-                        <h4>2021/02 ~ present</h4>
-                        <h5>軟體工程師 - 資訊服務業</h5>
-                        <h6>Java ERP系統開發</h6>
+                        <h4>{{$t('experience.job3Time1')}}</h4>
+                        <h4>{{$t('experience.job3Time2')}}</h4>
+                        <h5>{{$t('experience.job3Title')}}</h5>
+                        <h6>{{$t('experience.job3Content1')}}</h6>
                         <p>
                             <ul>
-                                <li>系統開發、維護</li>
-                                <li>TortoiseSVN版本控制</li>
-                                <li>電子發票B2C導入開發</li>
+                                <li>{{$t('experience.job3C1Duty1')}}</li>
+                                <li>{{$t('experience.job3C1Duty2')}}</li>
+                                <li>{{$t('experience.job3C1Duty3')}}</li>
                             </ul>
                         </p>
                         <box>
-                            <body1>
-                                剛進公司時剛好是政府宣導要切換成電子發票的時期，因公司的開發團隊主要在日本，
-                                所以由唯一台灣人的我做電子發票的調查、與user開會了解需求、
-                                與日本前輩們討論種種流程的規劃。經歷了一連串的調查、開會、開發、
-                                測試、送審，將電子發票導入至公司的ERP系統中。
-                                公司ERP系統是使用Java、Spring框架、Hibernate與資料庫做聯繫。
-                                介面則是使用Action Script做開發。
-                            </body1>
+                            <body1>{{$t('experience.job3C1Detail')}}</body1>
                         </box>
-                        <h6>Android app開發</h6>
+                        <h6>{{$t('experience.job3Content2')}}</h6>
                         <p>
                             <ul>
-                                <li>App開發、維護</li>
-                                <li>Google play上架</li>
-                                <li>git版本控制</li>
-                                <li>Firebase管理內部測試、使用者分析、問題排除</li>
+                                <li>{{$t('experience.job3C2Duty1')}}</li>
+                                <li>{{$t('experience.job3C2Duty2')}}</li>
+                                <li>{{$t('experience.job3C2Duty3')}}</li>
+                                <li>{{$t('experience.job3C2Duty4')}}</li>
+                            </ul>
+                        </p>
+                        <h6>{{$t('experience.job3Content3')}}</h6>
+                        <p>
+                            <ul>
+                                <li>{{$t('experience.job3C3Duty1')}}</li>
+                                <li>{{$t('experience.job3C3Duty2')}}</li>
+                                <li>{{$t('experience.job3C3Duty3')}}</li>
                             </ul>
                         </p>
                         <box>
-                            <body1>
-                                利用公司api在app上顯示相關資訊讓使用者方便查詢所需要的資訊。
-                                使用Java開發，畫面是利用xml排版。透過firebase管理發布測試版，
-                                Google play上架app供使用者下載。開發上使用的技術都來自網路上。
-                                現在也在自學Kotlin語言、Clean Architecture架構、jetpack compose畫面顯示。
-                            </body1>
-                        </box>
-                        <h6>Node.js 網站維護</h6>
-                        <p>
-                            <ul>
-                                <li>網站開發、維護</li>
-                                <li>git版本控制</li>
-                                <li>使用Cordova產生ios app</li>
-                            </ul>
-                        </p>
-                        <box>
-                            <body1>
-                                前端使用angularJS框架，後端則是使用Express。一開始先了解npm、bower的用途
-                                與熟悉各目錄資料夾。因為還需要發布成ios app形式，所以也需了解ios app發布方式。
-                                花了一些功夫才理解apple developer上各個設定的意義。
-                            </body1>
+                            <body1>{{$t('experience.job3C3Detail')}}</body1>
                         </box>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="experience-item">
-                        <h4>2014/04 ~ 2015/09</h4>
-                        <h5>軟體工程師 - 旅遊服務業</h5>
-                        <h6>C# ERP系統開發</h6>
+                        <h4>{{$t('experience.job2Time1')}}</h4>
+                        <h5>{{$t('experience.job2Title')}}</h5>
+                        <h6>{{$t('experience.job2Content1')}}</h6>
                         <p>
                             <ul>
-                                <li>系統改版開發、維護</li>
-                                <li>TortoiseSVN版本控制</li>
+                                <li>{{$t('experience.job2C1Duty1')}}</li>
+                                <li>{{$t('experience.job2C1Duty2')}}</li>
                             </ul>
                         </p>
                         <box>
-                            <body1>
-                                一進公司剛好就是公司ERP系統在做改版的時期。一邊進行公司商業知識的學習，
-                                一邊進行系統的開發。也認識到sa、spec在開發中所擔任的職務、功用。
-                                系統是使用MVC架構，讓程式碼能更清晰，且較容易管理維護。
-                                部門也做了code review作業，讓程式碼整體更加統一。
-                            </body1>
+                            <body1>{{$t('experience.job2C1Detail')}}</body1>
                         </box>
                     </div>
                     <div class="experience-item">
-                        <h4>2012/08 ~ 2014/02</h4>
-                        <h5>軟體工程師 - 書籍出版、文教事業</h5>
-                        <h6>C# ERP系統開發</h6>
+                        <h4>{{$t('experience.job1Time1')}}</h4>
+                        <h5>{{$t('experience.job1Title')}}</h5>
+                        <h6>{{$t('experience.job1Content1')}}</h6>
                         <p>
                             <ul>
-                                <li>ERP系統開發、維護</li>
-                                <li>Team Foundation版本控制</li>
-                                <li>銷售統計報表(Crystal Report)產出</li>
-                                <li>ERP與鼎新系統(會計、物流)資料介接</li>
+                                <li>{{$t('experience.job1C1Duty1')}}</li>
+                                <li>{{$t('experience.job1C1Duty2')}}</li>
+                                <li>{{$t('experience.job1C1Duty3')}}</li>
+                                <li>{{$t('experience.job1C1Duty4')}}</li>
                             </ul>
                         </p>
                         <box>
-                            <body1>
-                                出社會後的第一份工作。學習到什麼是ERP系統，
-                                依據user的需求做系統的開發與維護，撈取資料庫資料滿足業務主管的銷售報表需求。
-                                因應公司購入鼎新系統，使用Agilepoint製作流程幫助兩邊的資料介接。
-                            </body1>
+                            <body1>{{$t('experience.job1C1Detail')}}</body1>
                         </box>
                     </div>
                 </div>
@@ -413,8 +369,9 @@
     
 
     <!-- Vendor JS Files -->
-    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/purecounter/purecounter.js"></script> 
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
@@ -423,7 +380,6 @@
 
     <script src="https://unpkg.com/vue@3"></script>
     <script src="https://unpkg.com/vue-i18n@9"></script>
-    <script src="https://unpkg.com/vue-i18n@9.1.0/dist/vue-i18n.global.js"></script>
     <script src="assets/js/i18n.js"></script>
     <script src="assets/js/vuei18n.js"></script>
 
