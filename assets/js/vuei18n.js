@@ -4,7 +4,7 @@ let locale = localStorage.getItem('locale') || 'tw'
 
 const i18n = VueI18n.createI18n({
     locale: locale, // set locale
-    fallbackLocale: 'en', // set fallback locale
+    fallbackLocale: 'tw', // set fallback locale
     messages, // set locale messages
     // If you need to specify other options, you can set other options
     // ...
