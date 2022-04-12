@@ -50,16 +50,14 @@
                     <li><a class="nav-link" href="#skills">{{$t('header.skills')}}</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
-                
+                <!--
                 <div class="social-links">
                     <a id="enLang" href="#">En</a>
                     <a id="jaLang" href="#">Ja</a>
                     <a id="twLang" href="#">Tw</a>
                 </div>
+                -->
             </nav>
-
-            
-
 
         </div>
     </header>
@@ -90,13 +88,13 @@
                         <li><i class="bi bi-chevron-right"></i> <strong>{{$t('about.education')}}</strong> <span>{{$t('about.university')}}</span></li>
                         <li><i class="bi bi-chevron-right"></i> <strong>{{$t('about.email')}}</strong> <span>ayay8221@gmail.com</span></li>
                     </ul>
-
+<!--
                     <div class="social-links">
                         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
                         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
                     </div>
-
+-->
                     <h3>{{$t('about.summary')}}</h3>
                     <p>{{$t('about.mySummary')}}</p>
 
@@ -199,79 +197,64 @@
 
             <div class="section-title">
                 <h2>Working Holiday</h2>
-                <p>打工度假</p>
+                <p>{{$t('workingHoliday.workingHoliday')}}</p>
             </div>
 
             <div class="row">
                 <div class="col-lg-6">
                     <div class="experience-item">
-                        <h4>2019/07 ~ 2021/01</h4>
-                        <h5>紐西蘭</h5>
-                        <h6>Auckland</h6>
+                        <h4>{{$t('workingHoliday.whNzTime')}}</h4>
+                        <h5>{{$t('workingHoliday.whNzCountry')}}</h5>
+                        <h6>{{$t('workingHoliday.whNzCity1')}}</h6>
                         <p>
                             <ul>
-                                <li>Kitchen hand</li>
+                                <li>{{$t('workingHoliday.whNzCity1Job1')}}</li>
                             </ul>
                         </p>
-                        <h6>Christchurch</h6>
+                        <h6>{{$t('workingHoliday.whNzCity2')}}</h6>
                         <p>
                             <ul>
-                                <li>Kitchen hand</li>
-                                <li>Asparagus cutting</li>
-                                <li>Tomato picking</li>
+                                <li>{{$t('workingHoliday.whNzCity2Job1')}}</li>
+                                <li>{{$t('workingHoliday.whNzCity2Job2')}}</li>
+                                <li>{{$t('workingHoliday.whNzCity2Job3')}}</li>
                             </ul>
                         </p>
-                        <h6>Motueka</h6>
+                        <h6>{{$t('workingHoliday.whNzCity3')}}</h6>
                         <p>
                             <ul>
-                                <li>Apple packing</li>
+                                <li>{{$t('workingHoliday.whNzCity3Job1')}}</li>
                             </ul>
                         </p>
                         <box>
-                            <body1>
-                                每年能去紐西蘭打工的台灣人只有600人，而能否申請到簽證是已先搶先贏的方式。
-                                很幸運地成為600壯士的其中一名。因工作專案剛好告了一個段落，所以決定去一趟紐西蘭打工度假。
-                                感謝公司能讓我已留職停薪的方式前往體驗新生活。
-                                紐西蘭是個人少風景美的國家。假日會看到很多人在海邊野餐、看書、散步、釣魚。
-                                感覺的到紐西蘭人很注重休閒娛樂。而我打工度假主要是做了在台灣比較不會碰到的農業工作，
-                                包裝蘋果、採摘番茄、切割蘆筍的工作。雖然不輕鬆，但是個有趣的經驗。
-                                在紐西蘭，最喜歡的就是開著車環繞南島各地方旅遊。
-                                很珍惜在紐西蘭的一年半，讓自己獨立且心境上更加的成熟。
-                            </body1>
+                            <body1>{{$t('workingHoliday.whNzComment')}}</body1>
                         </box>
                     </div>
                 </div>
 
                 <div class="col-lg-6">
                     <div class="experience-item">
-                        <h4>2015/10 ~ 2016/10</h4>
-                        <h5>日本</h5>
-                        <h6>長野 - 溫泉旅館</h6>
+                        <h4>{{$t('workingHoliday.whJpTime')}}</h4>
+                        <h5>{{$t('workingHoliday.whJpCountry')}}</h5>
+                        <h6>{{$t('workingHoliday.whJpCity1')}}</h6>
                         <p>
                             <ul>
-                                <li>廚房助理</li>
+                                <li>{{$t('workingHoliday.whJpCity1Job1')}}</li>
                             </ul>
                         </p>
-                        <h6>北海道 - 滑雪度假村</h6>
+                        <h6>{{$t('workingHoliday.whJpCity2')}}</h6>
                         <p>
                             <ul>
-                                <li>Skiing滑雪教練</li>
+                                <li>{{$t('workingHoliday.whJpCity2Job1')}}</li>
                             </ul>
                         </p>
-                        <h6>兵庫 - 溫泉旅館</h6>
+                        <h6>{{$t('workingHoliday.whJpCity3')}}</h6>
                         <p>
                             <ul>
-                                <li>旅館仲居</li>
+                                <li>{{$t('workingHoliday.whJpCity3Job1')}}</li>
                             </ul>
                         </p>
                         <box>
-                            <body1>
-                                因學習日文有一段時間，所以打算以打工度假的方式前往日本體驗生活，
-                                順便驗收自己日文能力到達時麼程度。在日本共做過三種不同的工作。其中，
-                                最特別的工作是一邊學習滑雪，一邊指導講中文的遊客滑雪。
-                                雖然工作不輕鬆，但能一邊滑雪一邊工作，真的是求之不得。
-                                也因此愛上了滑雪，回台後，每年冬天還是會找時間去日本滑雪。
-                            </body1>
+                            <body1>{{$t('workingHoliday.whJpComment')}}</body1>
                         </box>
                     </div>
                 </div>
@@ -289,13 +272,13 @@
 
             <div class="section-title">
                 <h2>Skills</h2>
-                <p>技能</p>
+                <p>{{$t('skills.skills')}}</p>
             </div>
 
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-6">
                     <div class="skills-item">
-                        <h4 class="bi bi-chevron-right">程式語言</h4>
+                        <h4 class="bi bi-chevron-right">{{$t('skills.skills1')}}</h4>
                         <ul>
                             <li><i class="bi bi-check-lg"></i> <strong>Java</strong></li>
                             <li><i class="bi bi-check-lg"></i> <strong>Kotlin</strong></li>
@@ -306,48 +289,35 @@
                         </span>
                     </div>
                     <div class="skills-item">
-                        <h4 class="bi bi-chevron-right">網頁開發</h4>
+                        <h4 class="bi bi-chevron-right">{{$t('skills.skills2')}}</h4>
                         <p>
                             <ul>
                                 <li><i class="bi bi-check-lg"></i> <strong>Html</strong><span></span></li>
-                                <li><i class="bi bi-check-lg"></i> <strong>JQuery</strong></li>
+                                <li><i class="bi bi-check-lg"></i> <strong>JQuery ajax</strong></li>
                                 <li><i class="bi bi-check-lg"></i> <strong>JavaScript</strong></li>
-                                <li><i class="bi bi-check-lg"></i> <strong>CSS</strong></li>
+                                <li><i class="bi bi-check-lg"></i> <strong>Node.js</strong></li>
                             </ul>
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-6">
                     <div class="skills-item">
-                        <h4 class="bi bi-chevron-right">文書處理軟體</h4>
-                        <p>
-                            <ul>
-                                <li><i class="bi bi-check-lg"></i> <strong>Word</strong></li>
-                                <li><i class="bi bi-check-lg"></i> <strong>Excel</strong></li>
-                            </ul>
-                        </p>
-                    </div>
-                    <div class="skills-item">
-                        <h4 class="bi bi-chevron-right">繪圖設計工具</h4>
+                        <h4 class="bi bi-chevron-right">{{$t('skills.skills4')}}</h4>
                         <p>
                             <ul>
                                 <li><i class="bi bi-check-lg"></i> <strong>Photoshop</strong></li>
                                 <li><i class="bi bi-check-lg"></i> <strong>Illustrator</strong></li>
-                                <li><i class="bi bi-check-lg"></i> <strong>InDesign</strong></li>
-                                <li><i class="bi bi-check-lg"></i> <strong>XD</strong></li>
                             </ul>
                         </p>
                     </div>
-                </div>
-                <div class="col-lg-4">
                     <div class="skills-item">
-                        <h4 class="bi bi-chevron-right">語言能力</h4>
+                        <h4 class="bi bi-chevron-right">{{$t('skills.skills5')}}</h4>
                         <p>
                             <ul>
-                                <li><i class="bi bi-check-lg"></i> <strong>Chinese</strong> - 母語</li>
-                                <li><i class="bi bi-check-lg"></i> <strong>English</strong> - 基本對話</li>
-                                <li><i class="bi bi-check-lg"></i> <strong>Japanese</strong> - 日常會話 (JLPT N1)</li>
-                                <li><i class="bi bi-check-lg"></i> <strong>Spanish</strong> - 學習中 A1</li>
+                                <li><i class="bi bi-check-lg"></i> <strong>{{$t('skills.s5Content1')}}</strong> - {{$t('skills.s5C1Detail')}}</li>
+                                <li><i class="bi bi-check-lg"></i> <strong>{{$t('skills.s5Content2')}}</strong> - {{$t('skills.s5C2Detail')}}</li>
+                                <li><i class="bi bi-check-lg"></i> <strong>{{$t('skills.s5Content3')}}</strong> - {{$t('skills.s5C3Detail')}} (JLPT N1)</li>
+                                <li><i class="bi bi-check-lg"></i> <strong>{{$t('skills.s5Content4')}}</strong> - {{$t('skills.s5C4Detail')}} A1</li>
                             </ul>
                         </p>
                     </div>
