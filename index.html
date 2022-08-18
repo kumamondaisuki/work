@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Fiona Hsiao</title>
+    <title>Chinfang Hsiao</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -38,7 +38,7 @@
     <header id="header">
         <div class="container">
 
-            <h1><a href="index.html">Fiona Hsiao</a></h1>
+            <h1><a href="index.html">Chinfang Hsiao</a></h1>
             <h2>Stay Hungry, Stay Foolish</h2>
             
 
@@ -47,16 +47,18 @@
                     <li><a class="nav-link active" href="#header">{{ $t('header.home')}}</a></li>
                     <li><a class="nav-link" href="#about">{{$t('header.about')}}</a></li>
                     <li><a class="nav-link" href="#experience">{{$t('header.experience')}}</a></li>
+                    <li><a class="nav-link" href="#workingholiday">{{$t('header.workingholiday')}}</a></li>
                     <li><a class="nav-link" href="#skills">{{$t('header.skills')}}</a></li>
+                    <li><a class="nav-link" href="#sideproject">{{$t('header.sideproject')}}</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
-                <!--
+                
                 <div class="social-links">
                     <a id="enLang" href="#">En</a>
                     <a id="jaLang" href="#">Ja</a>
                     <a id="twLang" href="#">Tw</a>
                 </div>
-                -->
+                
             </nav>
 
         </div>
@@ -75,32 +77,45 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-4" data-aos="fade-right">
-                    <img src="assets/img/me.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-                    <h3>{{$t('about.myName')}}</h3>
+                <div class="col-md-12">
                     <p class="fst-italic">
                         Sometimes we try to meet people's expectations and get lost in our lives. Remember to listen to your heart and pinpoint what you are truly eager for.
                     </p>
-                    <ul>
-                        <li><i class="bi bi-chevron-right"></i> <strong>{{$t('about.lived')}}</strong> <span>{{$t('about.liveIn')}}</span></li>
-                        <li><i class="bi bi-chevron-right"></i> <strong>{{$t('about.education')}}</strong> <span>{{$t('about.university')}}</span></li>
-                        <li><i class="bi bi-chevron-right"></i> <strong>{{$t('about.email')}}</strong> <span>ayay8221@gmail.com</span></li>
-                    </ul>
-<!--
-                    <div class="social-links">
-                        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-                    </div>
--->
-                    <h3>{{$t('about.summary')}}</h3>
-                    <p>{{$t('about.mySummary')}}</p>
+                </div>
+            </div>
 
-                    <h3>{{$t('about.interests')}}</h3>
-                    <p>{{$t('about.myInterests')}}</p>
-                    
+            <div class="row">
+                <div class ="col-md-12">
+                    <div class="box">
+                        <img src="assets/img/me.jpg" alt="Image" class="rounded-circle">
+                        <div class="box_content">
+                            <h3>{{$t('about.myName')}}</h3>
+                            <ul>
+                                <li>{{$t('about.lived')}} &nbsp; - &nbsp; {{$t('about.liveIn')}}</li>
+                                <li>{{$t('about.education')}} &nbsp; - &nbsp; {{$t('about.university')}}</li>
+                                <li>{{$t('about.email')}} &nbsp; - &nbsp; ayay8221@gmail.com</li>
+                            </ul>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class ="col-md-6">
+                    <div class="box">
+                        <div class="box_content">
+                            <h3>{{$t('about.summary')}}</h3>
+                            <p>{{$t('about.mySummary')}}</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class ="col-md-6">
+                    <div class="box">
+                        <div class="box_content">
+                            <h3>{{$t('about.interests')}}</h3>
+                            <p>{{$t('about.myInterests')}}</p>
+                        </div> 
+                    </div>
                 </div>
             </div>
 
@@ -195,82 +210,148 @@
                 </div>
             </div>
         </div>
+    </section>
+    <!-- End Experience Section -->
+
+    <!-- ======= Working Holiday Section ======= -->
+    <section id="workingholiday" class="workingholiday">
 
         <div class="container">
-
             <div class="section-title">
                 <h2>Working Holiday</h2>
                 <p>{{$t('workingHoliday.workingHoliday')}}</p>
             </div>
-
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="experience-item">
-                        <h4>{{$t('workingHoliday.whNzTime')}}</h4>
-                        <h5>{{$t('workingHoliday.whNzCountry')}}</h5>
-                        <h6>{{$t('workingHoliday.whNzCity1')}}</h6>
-                        <p>
-                            <ul>
-                                <li>{{$t('workingHoliday.whNzCity1Job1')}}</li>
-                            </ul>
-                        </p>
-                        <h6>{{$t('workingHoliday.whNzCity2')}}</h6>
-                        <p>
-                            <ul>
-                                <li>{{$t('workingHoliday.whNzCity2Job1')}}</li>
-                                <li>{{$t('workingHoliday.whNzCity2Job2')}}</li>
-                                <li>{{$t('workingHoliday.whNzCity2Job3')}}</li>
-                            </ul>
-                        </p>
-                        <h6>{{$t('workingHoliday.whNzCity3')}}</h6>
-                        <p>
-                            <ul>
-                                <li>{{$t('workingHoliday.whNzCity3Job1')}}</li>
-                            </ul>
-                        </p>
-                        <box>
-                            <body1>{{$t('workingHoliday.whNzComment')}}</body1>
-                        </box>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="experience-item">
-                        <h4>{{$t('workingHoliday.whJpTime')}}</h4>
-                        <h5>{{$t('workingHoliday.whJpCountry')}}</h5>
-                        <h6>{{$t('workingHoliday.whJpCity1')}}</h6>
-                        <p>
-                            <ul>
-                                <li>{{$t('workingHoliday.whJpCity1Job1')}}</li>
-                            </ul>
-                        </p>
-                        <h6>{{$t('workingHoliday.whJpCity2')}}</h6>
-                        <p>
-                            <ul>
-                                <li>{{$t('workingHoliday.whJpCity2Job1')}}</li>
-                            </ul>
-                        </p>
-                        <h6>{{$t('workingHoliday.whJpCity3')}}</h6>
-                        <p>
-                            <ul>
-                                <li>{{$t('workingHoliday.whJpCity3Job1')}}</li>
-                            </ul>
-                        </p>
-                        <box>
-                            <body1>{{$t('workingHoliday.whJpComment')}}</body1>
-                        </box>
-                    </div>
-                </div>
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <p class="fst-italic">There are many variations of passages of Lorem Ipsum available, but the majorityomised words which don't look 
+                     even slightly believable</p>
+                  </div>
+               </div>
             </div>
-
-        </div>
-
+            <div class="row">
+               <div class="col-lg-6">
+                  <div class="food_box">
+                     <img src="assets/img/FlagJP.png"/>
+                     <h4>{{$t('workingHoliday.whJpCountry')}}</h4>
+                     <div class="time">{{$t('workingHoliday.whJpTime')}}</div>
+                     <h5>{{$t('workingHoliday.whJpCity1Job1')}}</h5>
+                     <h6>{{$t('workingHoliday.whJpCity1')}}</h6>
+                     <p>
+                        test
+                     </p>
+                     <h5>{{$t('workingHoliday.whJpCity2Job1')}}</h5>
+                     <h6>{{$t('workingHoliday.whJpCity2')}}</h6>
+                     <p>
+                        test
+                     </p>
+                     <h5>{{$t('workingHoliday.whJpCity3Job1')}}</h5>
+                     <h6>{{$t('workingHoliday.whJpCity3')}}</h6>
+                     <p>
+                        test
+                     </p>
+                     <div class="summary">
+                        {{$t('workingHoliday.whJpComment')}}
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="food_box ">
+                     <img src="assets/img/FlagNZ.png"/>
+                     <h4>{{$t('workingHoliday.whNzCountry')}}</h4>
+                     <div class="time">{{$t('workingHoliday.whNzTime')}}</div>
+                     <h5>{{$t('workingHoliday.whNzCity1Job1')}}</h5>
+                     <h6>{{$t('workingHoliday.whNzCity1')}}</h6>
+                     <p>
+                        test
+                     </p>
+                     <h5>{{$t('workingHoliday.whNzCity2Job1')}}</h5>
+                     <h6>{{$t('workingHoliday.whNzCity2')}}</h6>
+                     <p>
+                        test
+                     </p>
+                     <h5>{{$t('workingHoliday.whNzCity3Job1')}}</h5>
+                     <h6>{{$t('workingHoliday.whNzCity3')}}</h6>
+                     <p>
+                        test
+                     </p>
+                     <h5>{{$t('workingHoliday.whNzCity2Job2')}}</h5>
+                     <h6>{{$t('workingHoliday.whNzCity2')}}</h6>
+                     <p>
+                        test
+                     </p>
+                     <h5>{{$t('workingHoliday.whNzCity2Job3')}}</h5>
+                     <h6>{{$t('workingHoliday.whNzCity2')}}</h6>
+                     <p>
+                        test
+                     </p>
+                     <div class="summary">
+                        {{$t('workingHoliday.whNzComment')}}
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
 
     </section>
-    <!-- End Experience Section -->
+    <!-- End Working Holiday Section -->
     
     <!-- ======= Skills Section ======= -->
     <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>Skills</h2>
+                <p>{{$t('skills.skills')}}</p>
+            </div>
+
+           <div class="row">
+              <div class="col-lg-3 col-md-6">
+                 <div id="white_bg" class="works_box">
+                    <h4>{{$t('skills.skills1')}}</h4>
+                    <ul>
+                        <li>Java</li>
+                        <li>Kotlin</li>
+                        <li>C#</li>
+                        <li>Python</li>
+                    </ul>
+                 </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                 <div id="white_bg" class="works_box ">
+                    <h4>{{$t('skills.skills2')}}</h4>
+                    <ul>
+                        <li>Html</li>
+                        <li>JQuery ajax</li>
+                        <li>JavaScript</li>
+                        <li>Node.js</li>
+                    </ul>
+                 </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                 <div id="white_bg" class="works_box">
+                    <h4>{{$t('skills.skills3')}}</h4>
+                    <ul>
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                    </ul>
+                 </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div id="white_bg" class="works_box">
+                    <h4>{{$t('skills.skills4')}}</h4>
+                    <ul>
+                        <li>{{$t('skills.s5Content1')}} - {{$t('skills.s5C1Detail')}}</li>
+                        <li>{{$t('skills.s5Content2')}} - {{$t('skills.s5C2Detail')}}</li>
+                        <li>{{$t('skills.s5Content3')}} - {{$t('skills.s5C3Detail')}} (JLPT N1)</li>
+                        <li>{{$t('skills.s5Content4')}} - {{$t('skills.s5C4Detail')}} A1</li>
+                    </ul>
+                </div>
+             </div>
+           </div>
+        </div>
+            
+            
+    <!--
         <div class="container">
 
             <div class="section-title">
@@ -328,12 +409,26 @@
             </div>
         </div>
 
+    -->
+    </section>
+    <!-- End Skills Section -->
+
+    <!-- ======= Side Project Section ======= -->
+    <section id="sideproject" class="about">
+
         <div class="container">
             <div class="section-title">
-                <h2>Portfolio ＆ Links</h2>
+                <h2>Side Project</h2>
                 <p>作品</p>
             </div>
 
+         
+
+            
+                
+
+            
+<!--
             <div class="row">
                 <div class="col-lg-6">
                     <div class="skills-item">
@@ -372,11 +467,12 @@
                     </div>
                 </div>
             </div>
+-->            
+
         </div>
 
     </section>
-    <!-- End Skills Section -->
-    
+    <!-- End Side Project Section -->
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter.js"></script> 

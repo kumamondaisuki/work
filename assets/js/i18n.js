@@ -4,7 +4,9 @@ const messages = {
         home: 'HOME',
         about: 'ABOUT',
         experience: 'EXPERIENCE',
-        skills: 'SKILLS'
+        workingholiday: 'WORKING HOLIDAY',
+        skills: 'SKILLS',
+        sideproject: 'SIDE PROJECT'
       },
       about:{
         about:'About me',
@@ -100,7 +102,9 @@ const messages = {
         home: 'ホーム',
         about: '自己紹介',
         experience: '経験',
-        skills: '技能'
+        workingholiday: '打工度假',
+        skills: '技能',
+        sideproject: '作品集'
       },
       about:{
         about:'',
@@ -193,7 +197,9 @@ const messages = {
         home: '首頁',
         about: '關於',
         experience: '工作經驗',
-        skills: '技能'
+        workingholiday: '打工度假',
+        skills: '技能',
+        sideproject: '作品集'
       },
       about:{
         about:'關於我',
@@ -306,10 +312,9 @@ const messages = {
       skills:{
         skills:'技能',
         skills1:'程式語言',
-        skills2:'網頁開發',
-        skills3:'文書處理軟體',
-        skills4:'繪圖設計工具',
-        skills5:'語言能力',
+        skills2:'網頁設計',
+        skills3:'繪圖設計',
+        skills4:'語言能力',
         s5Content1:'中文',
         s5C1Detail:'母語',
         s5Content2:'英文',
