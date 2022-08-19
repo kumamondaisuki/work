@@ -324,6 +324,17 @@ const messages = {
         s5Content4:'西班牙文',
         s5C4Detail:'學習中',
         
+      },
+      sideproject:{
+        skills:'技術',
+        content:'描述',
+        link:'連結',
+        project1Name:'專案1',
+        project1Content:'內容1',
+        project2Name:'專案2',
+        project2Content:'內容2',
+        project3Name:'專案3',
+        project3Content:'內容3',
       }
     }
   }

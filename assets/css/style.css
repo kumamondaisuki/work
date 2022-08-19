@@ -716,5 +716,44 @@ section.section-show {
 --------------------------------------------------------------*/
 
 
+.carousel-img {
+  height: 400px; /*can be anything*/
+  width: 200px; /*can be anything*/
+  margin:auto;
+}
+
+.carousel-img img{
+  max-height: 100%;  
+  max-width: 100%; 
+}
+
+.carousel-indicators {
+  bottom: -50px;
+}
 
 
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: none;
+}
+
+
+.carousel-item h5 {
+  font-size: 25px;
+  color:#ffa500;
+  margin-top: 30px;
+  text-align: center;
+}
+
+
+.carousel-item p {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+.carousel-item h4 {
+  font-size: 22px;
+  font-weight: bold;
+  color:#ffa500;
+}
