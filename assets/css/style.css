@@ -82,7 +82,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 .navbar .social-links {
-  margin-top: 20px;
   margin-left: 20px;
   display: flex;
 }
@@ -95,9 +94,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   line-height: 1;
   margin-left: 8px;
-  border-radius: 10%;
-  width: 30px;
-  height: 30px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
 }
     .navbar .social-links a:hover {
         background: rgba(255,165,0,0.2);
@@ -282,7 +281,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-mobile .social-links {
-  margin: 20px;
+  margin-top: 140px;
   display: flex;
 }
 .navbar-mobile .social-links a {
@@ -294,9 +293,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   line-height: 1;
   margin-right: 8px;
-  border-radius: 10%;
-  width: 30px;
-  height: 30px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
 }
 
 /*--------------------------------------------------------------
@@ -552,7 +551,6 @@ section.section-show {
 
 .workingholiday .container .titlepage {
   text-align: center;
-  padding-bottom: 30px;
 }
 
 .workingholiday .container .titlepage h2 {
@@ -655,23 +653,11 @@ section.section-show {
 # Skills
 --------------------------------------------------------------*/
 
-.skills .titlepage h2 {
-  padding-bottom: 0;
-}
-
-.skills .titlepage span {
-  font-size: 17px;
-  line-height: 30px;
-  color: #b3b1a6;
-  font-weight: 501;
-  display: block;
-}
-
 .skills .works_box {
   margin-top: 30px;
   background: rgba(255, 255, 255, 0.1);
   margin-bottom: 30px;
-  padding: 0px 30px 30px 30px;
+  padding: 70px 30px 30px 30px;
   border-radius: 0px 60px 0px 60px;
   transition: ease-in all 0.5s;
 }
@@ -682,28 +668,26 @@ section.section-show {
   font-weight: bold;
   color: #fff;
   background: #ffa500;
-  width: 180px;
   text-align: center;
   border-radius: 50px;
-  height: 100px;
-  width: 100px;
-  padding: 20px;
+  padding: 15px 25px;
   margin-left: -50px;
-  margin-top: -30px;
+  margin-top: -90px;
   position: absolute;
 }
 
-.skills .works_box p {
-  color: rgb(255, 255, 255);
-  font-size: 17px;
-  line-height: 33px;
-  text-align: left;
+
+.skills .works_box h5 {
+  color: #ffa500;
+  text-align: center;
 }
 
+/*
 .skills .works_box ul {
   padding-top: 70px;
   padding-left: 30px;
 }
+*/
 
 #white_bg:hover.works_box {
   border-radius: 40px 0px 40px 0px;

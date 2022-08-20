@@ -94,17 +94,33 @@ const messages = {
         whJpCity3:'',
         whJpCity3Job1:'',
         whJpComment:''
-      }
-
+      },
+      skills:{
+        skills:'Skills',
+        skills1:'Programming',
+        skills2:'Design',
+        skills3:'Language',
+        otherNail:'Nail Painting',
+        otherNailD:'Class C',
+        languageChinese:'Mandarin',
+        ChineseD:'First language',
+        languageEnglish:'English',
+        EnglishD:'Intermediate',
+        languageJapanese:'Japanese',
+        JapaneseD:'JLPT N1',
+        languageSpanish:'Spanish',
+        SpanishD:'Beginner',
+        
+      },
     },
     ja: {
       header: {
         home: 'ホーム',
-        about: '自己紹介',
-        experience: '経験',
-        workingholiday: '打工度假',
-        skills: '技能',
-        sideproject: '作品集'
+        about: '紹介',
+        experience: '経歴',
+        workingholiday: 'ワーキングホリデー',
+        skills: 'スキル',
+        sideproject: 'サイドプロジェクト'
       },
       about:{
         about:'',
@@ -190,7 +206,24 @@ const messages = {
         whJpCity3:'',
         whJpCity3Job1:'',
         whJpComment:''
-      }
+      },
+      skills:{
+        skills:'スキル',
+        skills1:'プログラミング言語',
+        skills2:'デザイン',
+        skills3:'言語',
+        otherNail:'ジェルネイル',
+        otherNailD:'Class C',
+        languageChinese:'中国語',
+        ChineseD:'母語',
+        languageEnglish:'英語',
+        EnglishD:'日常会話',
+        languageJapanese:'日本語',
+        JapaneseD:'日常会話 N1',
+        languageSpanish:'スペイン語',
+        SpanishD:'独学中',
+        
+      },
     },
     tw: {
       header:{
@@ -312,17 +345,18 @@ const messages = {
       skills:{
         skills:'技能',
         skills1:'程式語言',
-        skills2:'網頁設計',
-        skills3:'繪圖設計',
-        skills4:'語言能力',
-        s5Content1:'中文',
-        s5C1Detail:'母語',
-        s5Content2:'英文',
-        s5C2Detail:'基本對話',
-        s5Content3:'日文',
-        s5C3Detail:'日常對話',
-        s5Content4:'西班牙文',
-        s5C4Detail:'學習中',
+        skills2:'繪圖設計',
+        skills3:'語言能力',
+        otherNail:'指甲彩繪',
+        otherNailD:'初級',
+        languageChinese:'中文',
+        ChineseD:'母語',
+        languageEnglish:'英文',
+        EnglishD:'日常對話',
+        languageJapanese:'日文',
+        JapaneseD:'日常對話 N1',
+        languageSpanish:'西班牙文',
+        SpanishD:'自學中',
         
       },
       sideproject:{
