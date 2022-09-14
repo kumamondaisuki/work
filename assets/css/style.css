@@ -478,34 +478,71 @@ section.section-show {
     position: relative;
 }
     .experience .experience-item h4 {
-        line-height: 20px;
-        font-size: 18px;
+        font-size: 22px;
         font-weight: 600;
         text-transform: uppercase;
         font-family: "Poppins", sans-serif;
         color: #ffa500;
         margin-bottom: 10px;
     }
+
     .experience .experience-item h5 {
-        font-size: 18px;
+        font-size: 20px;
         padding: 5px 15px;
         font-weight: 600;
-        margin-bottom: 10px;
     }
     .experience .experience-item h6 {
-      font-size: 16px;
+      font-size: 18px;
       color: #ffa500;
       padding: 5px;
       display: inline-block;
       font-weight: 600;
       margin-bottom: 5px;
     }
+
+    .experience .experience-item .time{
+      font-size: 16px;
+      text-align: right;
+      line-height: 30px;
+      font-weight: 501;
+      margin-top: -40px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .experience .experience-item table {
+      width: 100%;
+    }
+
+    .experience .experience-item table tr td{
+      width: 50%;
+      vertical-align: top;
+    }
+
+    .experience .experience-item table tr td p{
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .experience .experience-item table .left{ 
+      padding:5px 10px;
+      border-radius: 5px;
+      margin-right:5px;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .experience .experience-item table .right{
+      background: rgba(255, 255, 255, 0.1);
+      padding:10px;
+      border-radius: 5px;
+      margin-left: 5px;
+    }
+
+
     .experience .experience-item box {
       display: flex;
       align-items: center;
       padding: 5px;
-      background: rgba(255, 255, 255, 0.1);
-      transition: ease-in-out 0.3s;
       margin-bottom: 20px;
     }
 
@@ -517,23 +554,8 @@ section.section-show {
     .experience .experience-item ul {
         padding-left: 20px;
     }
-    .experience .experience-item ul li {
-        padding-bottom: 10px;
-    }
-    .experience .experience-item:last-child {
-        padding-bottom: 0;
-    }
-    .experience .experience-item::before {
-        content: "";
-        position: absolute;
-        width: 16px;
-        height: 16px;
-        border-radius: 50px;
-        left: -9px;
-        top: 0;
-        background: #ffa500;
-        border: 2px solid #ffa500;
-    }
+    
+    
 
 /*--------------------------------------------------------------
 # Working Holiday
@@ -630,22 +652,20 @@ section.section-show {
 
 .workingholiday .food_box p {
   color: #fff;
-  font-size: 17px;
+  font-size: 15px;
   text-align: left;
-  line-height: 33px;
+  line-height: 30px;
   padding: 10px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
 }
 
-.workingholiday .food_box .summary {
-  font-size: 15px;
-  text-align: left;
-  line-height: 30px;
-  font-weight: 501;
+.workingholiday .food_box li {
   color: #fff;
-  margin-bottom: 10px;
-  padding: 10px;
+  font-size: 17px;
+  text-align: left;
+  padding: 5px;
+  line-height: 30px;
 }
 
 
