@@ -1,5 +1,7 @@
 const messages = {
     en: {
+      translate : 'translating',
+      translate2 : 'translating',
       header: {
         home: 'HOME',
         about: 'ABOUT',
@@ -9,71 +11,80 @@ const messages = {
         sideproject: 'SIDE PROJECT'
       },
       about:{
-        about:'About me',
-        myName:'ChinFang Hsiao',
-        lived:'',
-        liveIn:'Taoyuan',
-        education:'Education',
-        university:'',
-        email:'Email',
-        summary:'',
-        mySummary:'',
-        interests:'Interests',
-        myInterests:''
+        about:'關於我',
+        myName:'蕭欽方',
+        lived:'國家',
+        liveIn:'台灣',
+        education:'學歷',
+        university:'淡江大學 - 資訊管理學系',
+        email:'信箱',
+        summary:'簡歷',
+        mySummary:'前後在三間公司任職軟體工程師，約7年的開發經驗。'+
+        '前兩間公司主要是負責開發維護ERP系統，使用C#做開發。'+
+        '目前的公司主要也是做系統的開發與維護，使用Java做開發。'+
+        '近幾年，因公司需求所以開始接觸Android app開發。'+
+        '從開發環境的熟悉、app程式架構、kotlin語言、app的上架都是全新的學習。'+
+        '很喜歡這些新知識所帶來的挑戰，會利用工作外的時間去學習與接收新知識。'+
+        '目前正努力開發個人app中。另外，也有在做Python課程進修。',
+        interests:'興趣',
+        myInterests:'喜歡登山。在登山的過程中可以讓自己的心理沉靜下來，'+
+        '只需要想著努力跨出每一步。看看四周的環境變化，眺望遠方雄偉的山景。'+
+        '雖然身體疲憊但卻能放鬆心靈。今年想完成台北大縱走。目前爬過的山有玉山、北大武、加羅湖與嘉明湖，'+
+        '日本富士山與紐西蘭Roy peak等。'
       },
       experience:{
-        experience:'工作經驗',
-        job3Comapny:'環貫資訊股份有限公司',
-        job3Time1:'2017/01 ~ 2019/05',
-        job3Time2:'2021/02 ~ 2022/10',
-        job3Title:'軟體工程師',
-        job3Content1:'ERP系統開發',
-        job3C1Duty1:'系統開發、維護',
-        job3C1Duty2:'TortoiseSVN版本控制',
-        job3C1Duty3:'電子發票B2C導入開發',
-        job3C1Detail:'剛進公司時剛好是政府宣導要切換成電子發票的時期，'+
-        '所以就被指派處理電子發票的專案。一開始先對電子發票進行調查，參加電子發票說明會，'+
-        '與使用者開會了解需求，再與同事們討論系統流程的規劃。經歷了一連串的調查、開會、開發、'+
-        '測試、送審，最後成功將電子發票導入至公司的ERP系統中。'+
+        experience:'Experience',
+        jobDescription:'Job Description',
+        jobSkills:'Tools、Skills',
+        jobSkills1:'Language : ',
+        jobSkills2:'Version Control : ',
+        jobSkills3:'IDE : ',
+        jobSkills4:'Database : ',
+        job3Comapny:'UNIVA TECHNOLOGIES CO.',
+        job3Time1:'Jan 2017 ~ May 2019',
+        job3Time2:'Feb 2021 ~ Dec 2021',
+        job3Time3:'Jan 2022 ~ Oct 2022',
+        job3Title:'Software Engineer',
+        job3Content1:'ERP System Develop',
+        job3C1Duty1:'System develop and maintenance',
+        job3C1Duty2:'電子發票B2C導入開發',
+        job3C1Detail:'主要工作是ERP系統改版開發。之後因政府推行電子發票，'+
+        '所以開始著手電子發票導入專案。一開始先收集資訊、參加電子發票說明會，最後統整導入電子發票所需開發的內容與步驟。'+
+        '也與使用者開會若導入後所需做的修正。經歷了一連串的調查、開會、開發、測試、送審，'+
+        '最後成功將電子發票導入至公司的ERP系統中。'+
         '電子發票流程主要是利用Jenkins批次產生檔案後上傳至Turnkey。'+
-        '公司ERP系統是使用Java、Spring框架、Hibernate與資料庫做聯繫。'+
-        '介面則是使用Action Script做開發。',
-        job3Content2:'Android app開發',
-        job3C2Duty1:'App開發、維護',
-        job3C2Duty2:'Google play上架',
-        job3C2Duty3:'git版本控制',
-        job3C2Duty4:'Firebase管理內部測試、使用者分析、問題排除',
-        job3C2Detail:'利用公司api在app上顯示相關資訊讓使用者方便查詢所需要的資訊。'+
-        '使用Java開發，畫面是利用xml排版。透過firebase管理發布測試版，'+
-        '最後上架至Google play供使用者下載。'+
-        '現在也在自學Kotlin語言、Clean Architecture架構、jetpack compose畫面顯示。',
-        job3Content3:'Node.js 網站維護',
-        job3C3Duty1:'網站開發、維護',
-        job3C3Duty2:'git版本控制',
-        job3C3Duty3:'使用Cordova產生ios app',
-        job3C3Detail:'前端使用angular框架，後端則是使用Express。一開始先了解npm、bower的用途'+
-        '與熟悉各目錄資料夾。因為還需要發布成ios app形式，所以也需了解ios app發布方式。'+
-        '花了一些功夫才理解apple developer上各個設定的意義。',
-        job2Company:'雄獅旅行社股份有限公司',
-        job2Time1:'2014/04 ~ 2015/09',
-        job2Title:'軟體工程師 ',
-        job2Content1:'ERP系統開發',
-        job2C1Duty1:'系統改版開發、維護',
-        job2C1Duty2:'TortoiseSVN版本控制',
-        job2C1Detail:'一進公司剛好就是公司ERP系統在做改版的時期。一邊進行公司商業知識的學習，'+
-        '一邊進行系統的開發。也認識到sa、spec在開發中所擔任的職務、功用。'+
-        'ERP系統是使用C#做開發，MVC架構，讓程式碼能更清晰，且較容易管理維護。'+
-        '部門也做了code review作業，讓程式碼整體更加統一。',
-        job1Company:'堉舜國際文化事業股份有限公司',
-        job1Time1:'2012/08 ~ 2014/02',
-        job1Title:'軟體工程師',
-        job1Content1:'ERP系統開發',
-        job1C1Duty1:'ERP系統開發、維護',
-        job1C1Duty2:'Team Foundation版本控制',
-        job1C1Duty3:'銷售統計報表(Crystal Report)產出',
-        job1C1Duty4:'ERP與鼎新系統(會計、物流)資料介接',
-        job1C1Detail:'出社會後的第一份工作。學習到什麼是ERP系統，'+
-        '系統是使用C#，工作內容主要是需求開發與系統維護，和撈取資料讓主管分析。'+
+        '公司ERP系統是使用Java語言，Spring、Hibernate框架與資料庫使用MySql。',
+        job3Content2:'Android App Develop',
+        job3C2Duty1:'App develop and maintenance',
+        job3C2Duty2:'Google play upload',
+        job3C2Duty3:'Firebase管理內部測試、使用者分析、問題排除',
+        job3C2Detail:'製作app的目的是為了讓使用者方便查詢資訊。'+
+        '開發是使用Java語言，利用api獲取資料顯示在app。畫面是使用xml排版。'+
+        '透過firebase管理發布測試版。最後上架至Google play供使用者下載。',
+        job3Content3:'Node.js Website Develop',
+        job3C3Duty1:'Website develop and maintenance',
+        job3C3Duty2:'使用Cordova將專案轉化成ios,利用adhoc發布給公司內部使用',
+        job3C3Detail:'前端使用angular框架，後端則是使用Express，資料庫是使用MySql。'+
+        '利用Cordova將專案轉成ios app，也因此了解ios app發布方式'+
+        '與apple developer上各功能的設定。',
+        job2Company:'LION TRAVEL SERVICE CO.',
+        job2Time1:'Apr 2014 ~ Sep 2015',
+        job2Title:'Software Engineer',
+        job2Content1:'ERP System Develop',
+        job2C1Duty1:'ERP develop and maintenance',
+        job2C1Detail:'主要工作是ERP系統改版開發。依系統的服務項目區分出不同部分，'+
+        '分批進行系統的改版開發。各服務有專門的sa，依照所收到的spec開發功能完成需求。'+
+        '每週也會進行code review作業，讓程式碼整體更加統一。'+
+        'ERP系統是使用C#語言，MVC架構，資料庫是使用MSSql。',
+        job1Company:'U-SHUN COCOLONG',
+        job1Time1:'Aug 2012 ~ Feb 2014',
+        job1Title:'Software Engineer',
+        job1Content1:'ERP System Develop',
+        job1C1Duty1:'ERP develop and maintenance',
+        job1C1Duty2:'銷售統計報表產出',
+        job1C1Duty3:'ERP與鼎新系統(會計、物流)資料介接',
+        job1C1Detail:'主要工作是ERP系統開發維護與撈取資料庫資料供業務主管分析。'+
+        '系統是使用C#語言，資料庫是使用MSSql。'+
         '因應公司購入鼎新系統，使用Agilepoint製作流程幫助兩邊的資料介接。',
       },
       workingHoliday:{
@@ -84,6 +95,7 @@ const messages = {
         whNzCity1Job1:'Kitchen hand',
         whNzJob1_1:'Frying the food',
         whNzJob1_2:'Preparing ingredients',
+        whNzJob1_3:'Making dumplings',
         whNzCity2:'Christchurch',
         whNzCity2Job1:'Kitchen hand',
         whNzJob2_1:'Frying the food,grilled on a skewer',
@@ -95,7 +107,7 @@ const messages = {
         whNzCity3:'Motueka',
         whNzCity3Job1:'Packing staff',
         whNzJob3_1:'Apple packing',
-        whNzComment:'Every year only 600 taiwanese can go to New Zealand on a working holiday visa. First come, first served is the way of visa application.'+
+        whNzComment:'Every year only 600 Taiwanese can go to New Zealand on a working holiday visa. First come, first served is the way of visa application.'+
         'I was lucky I could get the working holiday visa. Because the project was done, I wanted to go abroad and do something new.'+
         'I was thankful that I could get one year off without pay. New Zealand is a beautiful country.'+
         'The weekend is important for them. They do activities with family on the beach such as picnics, reading books, going fishing or walking with their dogs.'+
@@ -109,14 +121,14 @@ const messages = {
         whJpJob1_1:'Preparing ingredients',
         whJpJob1_2:'Arrangement of japanese food',
         whJpCity2:'Hokkaido City',
-        whJpCity2Job1:'Skiing instructor',
+        whJpCity2Job1:'Ski instructor',
         whJpJob2_1:'Teaching skiing',
         whJpJob2_2:'Supporting job in skiing resort',
         whJpCity3:'Hyogo City',
         whJpCity3Job1:'Waitress',
         whJpJob3_1:'Customer service',
         whJpJob3_2:'Housekeeping',
-        whJpComment:'Because I had learned japanese for 3 years and I was interested in japanese life, I went to Japan by working holiday visa.'+
+        whJpComment:'Because I had learned japanese for 3 years and I was interested in japanese life, I applied a working holiday visa in Japan.'+
         'First time went abroad made me be not only nervous but also excited.'+
         'I did three different types of job during this year in Japan.'+
         'And also I learned some japanese culture.'+
@@ -141,6 +153,8 @@ const messages = {
       },
     },
     ja: {
+      translate : '翻訳中',
+      translate2 : '',
       header: {
         home: 'ホーム',
         about: '紹介',
@@ -150,72 +164,78 @@ const messages = {
         sideproject: 'サイドプロジェクト'
       },
       about:{
-        about:'',
-        myName:'',
-        lived:'',
-        liveIn:'',
-        education:'',
-        university:'',
-        email:'',
-        summary:'',
-        mySummary:'',
-        interests:'',
-        myInterests:''
+        about:'關於我',
+        myName:'蕭欽方',
+        lived:'國家',
+        liveIn:'台灣',
+        education:'學歷',
+        university:'淡江大學 - 資訊管理學系',
+        email:'信箱',
+        summary:'簡歷',
+        mySummary:'前後在三間公司任職軟體工程師，約7年的開發經驗。'+
+        '前兩間公司主要是負責開發維護ERP系統，使用C#做開發。'+
+        '目前的公司主要也是做系統的開發與維護，使用Java做開發。'+
+        '近幾年，因公司需求所以開始接觸Android app開發。'+
+        '從開發環境的熟悉、app程式架構、kotlin語言、app的上架都是全新的學習。'+
+        '很喜歡這些新知識所帶來的挑戰，會利用工作外的時間去學習與接收新知識。'+
+        '目前正努力開發個人app中。另外，也有在做Python課程進修。',
+        interests:'興趣',
+        myInterests:'喜歡登山。在登山的過程中可以讓自己的心理沉靜下來，'+
+        '只需要想著努力跨出每一步。看看四周的環境變化，眺望遠方雄偉的山景。'+
+        '雖然身體疲憊但卻能放鬆心靈。今年想完成台北大縱走。目前爬過的山有玉山、北大武、加羅湖與嘉明湖，'+
+        '日本富士山與紐西蘭Roy peak等。'
       },
       experience:{
         experience:'経歴',
-        job3Comapny:'Univa Technologies',
+        jobDescription:'仕事內容',
+        jobSkills:'ツール、技術',
+        jobSkills1:'開発言語 : ',
+        jobSkills2:'バージョン管理 : ',
+        jobSkills3:'IDE : ',
+        jobSkills4:'データベース : ',
+        job3Comapny:'Univa Technologies CO.(IT会社)',
         job3Time1:'2017/01 ~ 2019/05',
-        job3Time2:'2021/02 ~ 2022/10',
+        job3Time2:'2021/02 ~ 2021/12',
+        job3Time3:'2022/01 ~ 2022/10',
         job3Title:'ソフトウェア エンジニア',
         job3Content1:'ERP システム開発',
         job3C1Duty1:'ERP システム開発とメンテナンス',
-        job3C1Duty2:'TortoiseSVN バージョン管理',
-        job3C1Duty3:'電子發票B2C導入開發',
-        job3C1Detail:'剛進公司時剛好是政府宣導要切換成電子發票的時期，'+
-        '所以就被指派處理電子發票的專案。一開始先對電子發票進行調查，參加電子發票說明會，'+
-        '與使用者開會了解需求，再與同事們討論系統流程的規劃。經歷了一連串的調查、開會、開發、'+
-        '測試、送審，最後成功將電子發票導入至公司的ERP系統中。'+
-        '電子發票流程主要是利用Jenkins批次產生檔案後上傳至Turnkey。'+
-        '公司ERP系統是使用Java、Spring框架、Hibernate與資料庫做聯繫。'+
-        '介面則是使用Action Script做開發。',
-        job3Content2:'Android app開發',
-        job3C2Duty1:'App開發、維護',
-        job3C2Duty2:'Google play上架',
-        job3C2Duty3:'git版本控制',
-        job3C2Duty4:'Firebase管理內部測試、使用者分析、問題排除',
-        job3C2Detail:'利用公司api在app上顯示相關資訊讓使用者方便查詢所需要的資訊。'+
-        '使用Java開發，畫面是利用xml排版。透過firebase管理發布測試版，'+
-        '最後上架至Google play供使用者下載。'+
-        '現在也在自學Kotlin語言、Clean Architecture架構、jetpack compose畫面顯示。',
-        job3Content3:'Node.js 網站維護',
-        job3C3Duty1:'網站開發、維護',
-        job3C3Duty2:'git版本控制',
-        job3C3Duty3:'使用Cordova產生ios app',
-        job3C3Detail:'前端使用angular框架，後端則是使用Express。一開始先了解npm、bower的用途'+
-        '與熟悉各目錄資料夾。因為還需要發布成ios app形式，所以也需了解ios app發布方式。'+
-        '花了一些功夫才理解apple developer上各個設定的意義。',
-        job2Company:'雄獅旅行社股份有限公司',
+        job3C1Duty2:'電子発票の開発',
+        job3C1Detail:'仕事内容はERPシステム開発とメンテナンスです。'+
+        '当時電子発票に変更するため、このプロジェクトの担当者になりました。'+
+        '最初は色々な情報を集めて、セミナーを参加して、電子発表に関する開発用の資料を作りました。'+
+        '関連者、同僚と何回も会議を行いました。調査、打ち合わせ、開発、テスト、申請の過程で最後無事に完了しました。'+
+        'ERPシステムはJava言語、SpringとHibernateのフレームワーク、MySqlデータベースでした。',
+        job3Content2:'Android アプリ開発',
+        job3C2Duty1:'アプリ開発とメンテナンス',
+        job3C2Duty2:'Google play storeにアプリを公開する',
+        job3C2Duty3:'Firebaseで内部テスト管理、利用者分析、issues解決',
+        job3C2Detail:'アプリを開発する目的は簡単に情報が検索できるためでした。'+
+        'アプリの開発はJavaでAPIを利用して、情報をアプリに表示することです。'+
+        'firebaseでテスト配布と管理で、Google playにアップロードします。',
+        job3Content3:'Node.js ウェブサイト開発とメンテナンス',
+        job3C3Duty1:'ウェブサイト開発',
+        job3C3Duty2:'Cordovaでプロジェクトをiosに変更して,Apple AdHocで配布します。',
+        job3C3Detail:'前端はangularにして，後端はExpresにして、データーベースはMySqlでした。'+
+        'ios appの配布を利用したことないですが、今度のプロジェクトのきっかけでios app配布方法を理解しました。'+
+        'apple developerの色々な機能の利用方も理解できました。',
+        job2Company:'LION TRAVEL SERVICE CO.（旅行会社）',
         job2Time1:'2014/04 ~ 2015/09',
         job2Title:'ソフトウェア エンジニア',
         job2Content1:'ERP システム開発',
         job2C1Duty1:'ERP システム切り替え開発とメンテナンス',
-        job2C1Duty2:'TortoiseSVN版本控制',
-        job2C1Detail:'一進公司剛好就是公司ERP系統在做改版的時期。一邊進行公司商業知識的學習，'+
-        '一邊進行系統的開發。也認識到sa、spec在開發中所擔任的職務、功用。'+
-        'ERP系統是使用C#做開發，MVC架構，讓程式碼能更清晰，且較容易管理維護。'+
-        '部門也做了code review作業，讓程式碼整體更加統一。',
-        job1Company:'堉舜國際文化事業股份有限公司',
+        job2C1Detail:'仕事主にERPシステム切り替えの開発でした。システムに色々な機能があって、毎回一部の機能を切り替えしました。'+
+        '毎週はcode reviewを行いました。ERPシステムはC#言語で、MVCモデル、データベースはMSSqlでした。',
+        job1Company:'U-SHUN Cocolong (文教業界）',
         job1Time1:'2012/08 ~ 2014/02',
         job1Title:'ソフトウェア エンジニア',
         job1Content1:'ERP システム開発',
         job1C1Duty1:'ERP システム開発とメンテナンス',
-        job1C1Duty2:'Team Foundation版本控制',
-        job1C1Duty3:'銷售統計報表(Crystal Report)產出',
-        job1C1Duty4:'ERP與鼎新系統(會計、物流)資料介接',
-        job1C1Detail:'出社會後的第一份工作。學習到什麼是ERP系統，'+
-        '系統是使用C#，工作內容主要是需求開發與系統維護，和撈取資料讓主管分析。'+
-        '因應公司購入鼎新系統，使用Agilepoint製作流程幫助兩邊的資料介接。',
+        job1C1Duty2:'売上統計の抽出',
+        job1C1Duty3:'他のシステムとデータ連携(経理、配達)',
+        job1C1Detail:'仕事内容はERPシステム開発とメンテナンスで、時々売上統計の抽出でした。'+
+        'ERPシステムはC#言語で、データベースはMSSqlでした。'+
+        'あとは、他社のシステムとデータ連携するとめ、Agilepointを利用しました。',
       },
       workingHoliday:{
         workingHoliday:'ワーキングホリデー',
@@ -225,6 +245,7 @@ const messages = {
         whNzCity1Job1:'キッチンハンド',
         whNzJob1_1:'揚げ物の担当',
         whNzJob1_2:'食材の準備',
+        whNzJob1_3:'餃子の包み',
         whNzCity2:'クライストチャーチ',
         whNzCity2Job1:'キッチンハンド',
         whNzJob2_1:'揚げ物、焼き鳥の担当',
@@ -282,6 +303,8 @@ const messages = {
       },
     },
     tw: {
+      translate : '',
+      translate2 : '',
       header:{
         home: '首頁',
         about: '關於',
@@ -293,8 +316,8 @@ const messages = {
       about:{
         about:'關於我',
         myName:'蕭欽方',
-        lived:'居住',
-        liveIn:'桃園',
+        lived:'國家',
+        liveIn:'台灣',
         education:'學歷',
         university:'淡江大學 - 資訊管理學系',
         email:'信箱',
@@ -319,55 +342,52 @@ const messages = {
         jobSkills1:'語言 : ',
         jobSkills2:'版本控制 : ',
         jobSkills3:'開發工具 : ',
+        jobSkills4:'資料庫 : ',
         job3Comapny:'環貫資訊股份有限公司',
         job3Time1:'2017/01 ~ 2019/05',
         job3Time2:'2021/02 ~ 2021/12',
         job3Time3:'2022/01 ~ 2022/10',
         job3Title:'軟體工程師',
         job3Content1:'ERP系統開發',
-        job3C1Duty1:'系統開發、維護',
+        job3C1Duty1:'系統改版開發、維護',
         job3C1Duty2:'電子發票B2C導入開發',
-        job3C1Detail:'剛進公司時剛好是政府宣導要切換成電子發票的時期，'+
-        '所以就被指派處理電子發票的專案。一開始先對電子發票進行調查，參加電子發票說明會，'+
-        '與使用者開會了解需求，再與同事們討論系統流程的規劃。經歷了一連串的調查、開會、開發、'+
-        '測試、送審，最後成功將電子發票導入至公司的ERP系統中。'+
+        job3C1Detail:'主要工作是ERP系統改版開發。之後因政府推行電子發票，'+
+        '所以開始著手電子發票導入專案。一開始先收集資訊、參加電子發票說明會，最後統整導入電子發票所需開發的內容與步驟。'+
+        '也與使用者開會若導入後所需做的修正。經歷了一連串的調查、開會、開發、測試、送審，'+
+        '最後成功將電子發票導入至公司的ERP系統中。'+
         '電子發票流程主要是利用Jenkins批次產生檔案後上傳至Turnkey。'+
-        '公司ERP系統是使用Java、Spring框架、Hibernate與資料庫做聯繫。'+
-        '介面則是使用Action Script做開發。',
+        '公司ERP系統是使用Java語言，Spring、Hibernate框架與資料庫使用MySql。',
         job3Content2:'Android app開發',
         job3C2Duty1:'App開發、維護',
         job3C2Duty2:'Google play上架',
         job3C2Duty3:'Firebase管理內部測試、使用者分析、問題排除',
-        job3C2Detail:'利用公司api在app上顯示相關資訊讓使用者方便查詢所需要的資訊。'+
-        '使用Java開發，畫面是利用xml排版。透過firebase管理發布測試版，'+
-        '最後上架至Google play供使用者下載。'+
-        '現在也在自學Kotlin語言、Clean Architecture架構、jetpack compose畫面顯示。',
-        job3Content3:'Node.js 網站維護',
-        job3C3Duty1:'網站開發、維護',
-        job3C3Duty2:'使用Cordova產生ios app',
-        job3C3Detail:'前端使用angular框架，後端則是使用Express。一開始先了解npm、bower的用途'+
-        '與熟悉各目錄資料夾。因為還需要發布成ios app形式，所以也需了解ios app發布方式。'+
-        '花了一些功夫才理解apple developer上各個設定的意義。',
+        job3C2Detail:'製作app的目的是為了讓使用者方便查詢資訊。'+
+        '開發是使用Java語言，利用api獲取資料顯示在app。畫面是使用xml排版。'+
+        '透過firebase管理發布測試版。最後上架至Google play供使用者下載。',
+        job3Content3:'Node.js開發維護',
+        job3C3Duty1:'系統開發、維護',
+        job3C3Duty2:'使用Cordova將專案轉化成ios,利用adhoc發布給公司內部使用',
+        job3C3Detail:'前端使用angular框架，後端則是使用Express，資料庫是使用MySql。'+
+        '利用Cordova將專案轉成ios app，也因此了解ios app發布方式'+
+        '與apple developer上各功能的設定。',
         job2Company:'雄獅旅行社股份有限公司',
         job2Time1:'2014/04 ~ 2015/09',
         job2Title:'軟體工程師 ',
         job2Content1:'ERP系統開發',
-        job2C1Duty1:'系統改版開發、維護',
-        job2C1Duty2:'TortoiseSVN版本控制',
-        job2C1Detail:'一進公司剛好就是公司ERP系統在做改版的時期。一邊進行公司商業知識的學習，'+
-        '一邊進行系統的開發。也認識到sa、spec在開發中所擔任的職務、功用。'+
-        'ERP系統是使用C#做開發，MVC架構，讓程式碼能更清晰，且較容易管理維護。'+
-        '部門也做了code review作業，讓程式碼整體更加統一。',
+        job2C1Duty1:'ERP系統開發、維護',
+        job2C1Detail:'主要工作是ERP系統改版開發。依系統的服務項目區分出不同部分，'+
+        '分批進行系統的改版開發。各服務有專門的sa，依照所收到的spec開發功能完成需求。'+
+        '每週也會進行code review作業，讓程式碼整體更加統一。'+
+        'ERP系統是使用C#語言，MVC架構，資料庫是使用MSSql。',
         job1Company:'堉舜國際文化事業股份有限公司',
         job1Time1:'2012/08 ~ 2014/02',
         job1Title:'軟體工程師',
         job1Content1:'ERP系統開發',
         job1C1Duty1:'ERP系統開發、維護',
-        job1C1Duty2:'Team Foundation版本控制',
-        job1C1Duty3:'銷售統計報表(Crystal Report)產出',
-        job1C1Duty4:'ERP與鼎新系統(會計、物流)資料介接',
-        job1C1Detail:'出社會後的第一份工作。學習到什麼是ERP系統，'+
-        '系統是使用C#，工作內容主要是需求開發與系統維護，和撈取資料讓主管分析。'+
+        job1C1Duty2:'銷售統計報表產出',
+        job1C1Duty3:'ERP與鼎新系統(會計、物流)資料介接',
+        job1C1Detail:'主要工作是ERP系統開發維護與撈取資料庫資料供業務主管分析。'+
+        '系統是使用C#語言，資料庫是使用MSSql。'+
         '因應公司購入鼎新系統，使用Agilepoint製作流程幫助兩邊的資料介接。',
       },
       workingHoliday:{
@@ -378,6 +398,7 @@ const messages = {
         whNzCity1Job1:'廚房助理',
         whNzJob1_1:'炸物料理',
         whNzJob1_2:'準備食材',
+        whNzJob1_3:'包水餃',
         whNzCity2:'基督城',
         whNzCity2Job1:'廚房助理',
         whNzJob2_1:'炸物，燒烤料理',

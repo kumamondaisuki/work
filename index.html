@@ -49,7 +49,7 @@
                     <li><a class="nav-link" href="#experience">{{$t('header.experience')}}</a></li>
                     <li><a class="nav-link" href="#workingholiday">{{$t('header.workingholiday')}}</a></li>
                     <li><a class="nav-link" href="#skills">{{$t('header.skills')}}</a></li>
-                    <li><a class="nav-link" href="#sideproject">{{$t('header.sideproject')}}</a></li>
+                    <!-- <li><a class="nav-link" href="#sideproject">{{$t('header.sideproject')}}</a></li> -->
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
                 
@@ -72,7 +72,7 @@
         <div class="about-me container">
 
             <div class="section-title">
-                <h2>About</h2>
+                <h2>About {{$t('translate')}}</h2>
                 <p>{{$t('about.about')}}</p>
             </div>
 
@@ -130,7 +130,7 @@
         <div class="container">
 
             <div class="section-title">
-                <h2>Experience</h2>
+                <h2>Experience {{$t('translate2')}}</h2>
                 <p>{{$t('experience.experience')}}</p>
             </div>
 
@@ -141,87 +141,82 @@
                         <h5>{{$t('experience.job3Title')}}</h5>
                         <h6>{{$t('experience.job3Content1')}}</h6>
                         <div class="time">{{$t('experience.job3Time1')}}</div>
-                        <table>
-                            <tr>
-                                <td>
-                                    <div class="left">
-                                        <p>{{$t('experience.jobDescription')}}</p>
-                                        <ul>
-                                            <li>{{$t('experience.job3C1Duty1')}}</li>
-                                            <li>{{$t('experience.job3C1Duty2')}}</li>
-                                        </ul>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="right">
-                                        <p>{{$t('experience.jobSkills')}}</p>
-                                        <ul>
-                                            <li>{{$t('experience.jobSkills1')}}Java</li>
-                                            <li>{{$t('experience.jobSkills2')}}TortoiseSVN</li>
-                                            <li>{{$t('experience.jobSkills3')}}Eclipse</li>
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class = "jobbox">
+                                    <p>{{$t('experience.jobDescription')}}</p>
+                                    <ul>
+                                        <li>{{$t('experience.job3C1Duty1')}}</li>
+                                        <li>{{$t('experience.job3C1Duty2')}}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class = "jobbox">
+                                    <p>{{$t('experience.jobSkills')}}</p>
+                                    <ul>
+                                        <li>{{$t('experience.jobSkills1')}}Java</li>
+                                        <li>{{$t('experience.jobSkills2')}}TortoiseSVN</li>
+                                        <li>{{$t('experience.jobSkills3')}}Eclipse</li>
+                                        <li>{{$t('experience.jobSkills4')}}MySQL</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                         <box>
                             <body1>{{$t('experience.job3C1Detail')}}</body1>
                         </box>
                         <h6>{{$t('experience.job3Content2')}}</h6>
                         <div class="time">{{$t('experience.job3Time2')}}</div>
-                        <table>
-                            <tr>
-                                <td>
-                                    <div class="left">
-                                        <p>{{$t('experience.jobDescription')}}</p>
-                                        <ul>
-                                            <li>{{$t('experience.job3C2Duty1')}}</li>
-                                            <li>{{$t('experience.job3C2Duty2')}}</li>
-                                            <li>{{$t('experience.job3C2Duty3')}}</li>
-                                        </ul>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="right">
-                                        <p>{{$t('experience.jobSkills')}}</p>
-                                        <ul>
-                                            <li>{{$t('experience.jobSkills1')}}Java</li>
-                                            <li>{{$t('experience.jobSkills2')}}Git</li>
-                                            <li>{{$t('experience.jobSkills3')}}Android Studio</li>
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="jobbox">
+                                    <p>{{$t('experience.jobDescription')}}</p>
+                                    <ul>
+                                        <li>{{$t('experience.job3C2Duty1')}}</li>
+                                        <li>{{$t('experience.job3C2Duty2')}}</li>
+                                        <li>{{$t('experience.job3C2Duty3')}}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="jobbox">
+                                    <p>{{$t('experience.jobSkills')}}</p>
+                                    <ul>
+                                        <li>{{$t('experience.jobSkills1')}}Java</li>
+                                        <li>{{$t('experience.jobSkills2')}}Git</li>
+                                        <li>{{$t('experience.jobSkills3')}}Android Studio</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                         <box>
                             <body1>{{$t('experience.job3C2Detail')}}</body1>
                         </box>
                         <h6>{{$t('experience.job3Content3')}}</h6>
                         <div class="time">{{$t('experience.job3Time3')}}</div>
-                        <table>
-                            <tr>
-                                <td>
-                                    <div class="left">
-                                        <p>{{$t('experience.jobDescription')}}</p>
-                                        <ul>
-                                            <li>{{$t('experience.job3C3Duty1')}}</li>
-                                            <li>{{$t('experience.job3C3Duty2')}}</li>
-                                        </ul>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="right">
-                                        <p>{{$t('experience.jobSkills')}}</p>
-                                        
-                                        <ul>
-                                            <li>{{$t('experience.jobSkills1')}}Node.js</li>
-                                            <li>{{$t('experience.jobSkills2')}}Git</li>
-                                            <li>{{$t('experience.jobSkills3')}}Visual Studio Code</li>
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="jobbox">
+                                    <p>{{$t('experience.jobDescription')}}</p>
+                                    <ul>
+                                        <li>{{$t('experience.job3C3Duty1')}}</li>
+                                        <li>{{$t('experience.job3C3Duty2')}}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="jobbox">
+                                    <p>{{$t('experience.jobSkills')}}</p>
+                                    <ul>
+                                        <li>{{$t('experience.jobSkills1')}}Node.js</li>
+                                        <li>{{$t('experience.jobSkills2')}}Git</li>
+                                        <li>{{$t('experience.jobSkills3')}}Visual Studio Code</li>
+                                        <li>{{$t('experience.jobSkills4')}}MySQL</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                         <box>
                             <body1>{{$t('experience.job3C3Detail')}}</body1>
                         </box>
@@ -233,12 +228,27 @@
                         <h5>{{$t('experience.job2Title')}}</h5>
                         <h6>{{$t('experience.job2Content1')}}</h6>
                         <div class="time">{{$t('experience.job2Time1')}}</div>
-                        <p>
-                            <ul>
-                                <li>{{$t('experience.job2C1Duty1')}}</li>
-                                <li>{{$t('experience.job2C1Duty2')}}</li>
-                            </ul>
-                        </p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="jobbox">
+                                    <p>{{$t('experience.jobDescription')}}</p>
+                                    <ul>
+                                        <li>{{$t('experience.job2C1Duty1')}}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="jobbox">
+                                    <p>{{$t('experience.jobSkills')}}</p>
+                                    <ul>
+                                        <li>{{$t('experience.jobSkills1')}}C#</li>
+                                        <li>{{$t('experience.jobSkills2')}}TortoiseSVN</li>
+                                        <li>{{$t('experience.jobSkills3')}}Visual Studio</li>
+                                        <li>{{$t('experience.jobSkills4')}}MSSQL</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                         <box>
                             <body1>{{$t('experience.job2C1Detail')}}</body1>
                         </box>
@@ -248,14 +258,29 @@
                         <h5>{{$t('experience.job1Title')}}</h5>
                         <h6>{{$t('experience.job1Content1')}}</h6>
                         <div class="time">{{$t('experience.job1Time1')}}</div>
-                        <p>
-                            <ul>
-                                <li>{{$t('experience.job1C1Duty1')}}</li>
-                                <li>{{$t('experience.job1C1Duty2')}}</li>
-                                <li>{{$t('experience.job1C1Duty3')}}</li>
-                                <li>{{$t('experience.job1C1Duty4')}}</li>
-                            </ul>
-                        </p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="jobbox">
+                                    <p>{{$t('experience.jobDescription')}}</p>
+                                    <ul>
+                                        <li>{{$t('experience.job1C1Duty1')}}</li>
+                                        <li>{{$t('experience.job1C1Duty2')}}</li>
+                                        <li>{{$t('experience.job1C1Duty3')}}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="jobbox">
+                                    <p>{{$t('experience.jobSkills')}}</p>
+                                    <ul>
+                                        <li>{{$t('experience.jobSkills1')}}C#</li>
+                                        <li>{{$t('experience.jobSkills2')}}Team Foundation</li>
+                                        <li>{{$t('experience.jobSkills3')}}Visual Studio</li>
+                                        <li>{{$t('experience.jobSkills4')}}MSSQL</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                         <box>
                             <body1>{{$t('experience.job1C1Detail')}}</body1>
                         </box>
@@ -324,6 +349,7 @@
                      <ul>
                         <li>{{$t('workingHoliday.whNzJob1_1')}}</li>
                         <li>{{$t('workingHoliday.whNzJob1_2')}}</li>
+                        <li>{{$t('workingHoliday.whNzJob1_3')}}</li>
                      </ul>
                      <h5>{{$t('workingHoliday.whNzCity2Job1')}}</h5>
                      <h6>{{$t('workingHoliday.whNzCity2')}}</h6>
