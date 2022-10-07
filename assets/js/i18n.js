@@ -47,20 +47,18 @@ const messages = {
         job3Title:'Software Engineer',
         job3Content1:'ERP System Develop',
         job3C1Duty1:'System develop and maintenance',
-        job3C1Duty2:'電子發票B2C導入開發',
-        job3C1Detail:'主要工作是ERP系統改版開發。之後因政府推行電子發票，'+
-        '所以開始著手電子發票導入專案。一開始先收集資訊、參加電子發票說明會，最後統整導入電子發票所需開發的內容與步驟。'+
-        '也與使用者開會若導入後所需做的修正。經歷了一連串的調查、開會、開發、測試、送審，'+
-        '最後成功將電子發票導入至公司的ERP系統中。'+
-        '電子發票流程主要是利用Jenkins批次產生檔案後上傳至Turnkey。'+
-        '公司ERP系統是使用Java語言，Spring、Hibernate框架與資料庫使用MySql。',
+        job3C1Duty2:'B2X E-Invoce Develop',
+        job3C1Detail:'Main job is ERP system developed. One of the projects is E-Invoice project which used to print invoices, but it would become to be transmited by Internet and do not have to be printed.'+
+        'At the beginning, I needed to collect information and joined to seminars. After that I aranged the E-Invoice documents which describe the points about how to develop E-Invoice.'+
+        'We also had meetings with users to discuss their requests. After almost two years, we had finished the E-Invoice project.'+
+        'ERP system is developed by Java, using Spring, Hibernate frameworks, and Mysql database.',
         job3Content2:'Android App Develop',
         job3C2Duty1:'App develop and maintenance',
-        job3C2Duty2:'Google play upload',
-        job3C2Duty3:'Firebase管理內部測試、使用者分析、問題排除',
-        job3C2Detail:'製作app的目的是為了讓使用者方便查詢資訊。'+
-        '開發是使用Java語言，利用api獲取資料顯示在app。畫面是使用xml排版。'+
-        '透過firebase管理發布測試版。最後上架至Google play供使用者下載。',
+        job3C2Duty2:'Upload app to Google play',
+        job3C2Duty3:'Managing test account, users analysis and detecting bugs or problems by Firebase.',
+        job3C2Detail:'App developed is order to make users easily search the information by themselves.'+
+        'App was developed by Java, using api to get the data which is displayed on the app.'+
+        'After developing app, we would release a test version to test. And finally, app is uploaded to Google play.',
         job3Content3:'Node.js Website Develop',
         job3C3Duty1:'Website develop and maintenance',
         job3C3Duty2:'使用Cordova將專案轉化成ios,利用adhoc發布給公司內部使用',
